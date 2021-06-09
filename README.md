@@ -1,4 +1,4 @@
-# Laravel Man Pagination - English documentation
+# Laravel Man Pagination
 
 [![Latest Stable Version](https://poser.pugx.org/dev-and-web/laravel-man-pagination/v/stable)](https://packagist.org/packages/dev-and-web/laravel-man-pagination)
 [![License](https://poser.pugx.org/dev-and-web/laravel-man-pagination/license)](https://packagist.org/packages/dev-and-web/laravel-man-pagination)

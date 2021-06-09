@@ -1,0 +1,31 @@
+{
+    "name": "dev-and-web/laravel-man-pagination",
+    "description": "Laravel Pagination library",
+    "type": "library",
+    "keywords": ["php","laravel","pagination","paginator"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stephen Damian",
+            "email": "contact@devandweb.fr",
+            "homepage": "https://www.devandweb.fr",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "contact@devandweb.fr",
+        "issues": "https://github.com/dev-and-web/laravel-man-pagination/issues",
+        "source": "https://github.com/dev-and-web/laravel-man-pagination",
+        "docs": "https://github.com/dev-and-web/laravel-man-pagination/blob/main/README.md"
+    },
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4" : {
+            "LaravelManPagination\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

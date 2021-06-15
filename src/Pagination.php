@@ -158,7 +158,7 @@ class Pagination implements PaginationInterface
         }
 
         $this->defaultPerPage = isset($options['pp']) && is_integer($options['pp']) ? $options['pp'] : 15;
-        $this->numberLinks = isset($options['number_links']) && is_integer($options['number_links']) ? $options['number_links'] : 10;
+        $this->numberLinks = isset($options['number_links']) && is_integer($options['number_links']) ? $options['number_links'] : 5;
         $this->arrayOptionsSelect = isset($options['options_select']) && is_array($options['options_select']) ? $options['options_select'] : [15, 30, 50, 100, 200, 300];
 
         $this->cssClassP = isset($options['css_class_p']) && is_string($options['css_class_p']) ? $options['css_class_p'] : 'pagination';

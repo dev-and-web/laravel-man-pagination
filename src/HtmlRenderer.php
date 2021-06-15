@@ -21,7 +21,7 @@ class HtmlRenderer extends RendererGenerator
     {
         $html = '';
 
-        $html .= '<div class="center">';
+        $html .= '<nav>';
         $html .=     '<ul class="'.$this->pagination->getCssClassP().'">';
 
         return $html;
@@ -59,8 +59,8 @@ class HtmlRenderer extends RendererGenerator
         $html = '';
 
         if ($this->pagination->getCurrentPage() !== 1) {
-            $points = ($this->pagination->getCurrentPage() > ($this->pagination->getNumberLinks() + 2))
-                ? '<li class="points"><span>...</span></li>'
+            $points = $this->pagination->getCurrentPage() > ($this->pagination->getNumberLinks() + 2)
+                ? '<li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>'
                 : '';
 
             $href = 'href="'.RequestLF::fullUrlWithQuery([Pagination::PAGE_NAME => 1]).'"';
@@ -104,8 +104,8 @@ class HtmlRenderer extends RendererGenerator
         $html = '';
 
         if ($this->pagination->getCurrentPage() !== $this->pagination->getPageEnd()) {
-            $points = ($this->pagination->getCurrentPage() < $this->pagination->getNbPages() - ($this->pagination->getNumberLinks() + 1))
-                ? '<li class="points"><span>...</span></li>'
+            $points = $this->pagination->getCurrentPage() < $this->pagination->getNbPages() - ($this->pagination->getNumberLinks() + 1)
+                ? '<li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>'
                 : '';
 
             $href = 'href="'.RequestLF::fullUrlWithQuery([Pagination::PAGE_NAME => $this->pagination->getNbPages()]).'"';
@@ -151,7 +151,7 @@ class HtmlRenderer extends RendererGenerator
         $html = '';
         
         $html .=     '</ul>';
-        $html .= '</div>';
+        $html .= '</nav>';
 
         return $html;
     }

@@ -220,8 +220,8 @@ $pagination = new Pagination(['pp'=>50]);
 // Is 15 by default
 
 // Number of links alongside the current page
-$pagination = new Pagination(['number_links'=>5]);
-// Is 10 by default
+$pagination = new Pagination(['number_links'=>10]);
+// Is 5 by default
 
 // The choice to select potentially generate with perPage()
 $pagination = new Pagination(['options_select'=>[5, 10, 50, 100, 500, 'all']]);
